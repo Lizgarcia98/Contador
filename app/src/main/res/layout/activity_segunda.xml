@@ -6,22 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".SegundaActivity">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="204dp"
+        android:text="0"
+        android:textColor="#171212"
+        android:textColorHint="#FFFFFF"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnDecrementar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFEB3B"
+        android:shadowColor="#0B0101"
+        android:text="Decrementar"
+        android:textColor="#140101"
+        android:textColorHint="#100101"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumero" />
+
+    <Button
+        android:id="@+id/btnIncrementar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Incrementar"
+        android:textColor="#1E0202"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/btnDecrementar"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumero" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
