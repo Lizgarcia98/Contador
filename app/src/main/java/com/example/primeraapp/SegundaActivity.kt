@@ -1,5 +1,6 @@
 package com.example.primeraapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +13,7 @@ class SegundaActivity : AppCompatActivity() {
 
         lateinit var btnIncrementar:Button
         lateinit var btnDecrementar:Button
+        lateinit var btnAtras:Button
         lateinit var tvContador:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +23,13 @@ class SegundaActivity : AppCompatActivity() {
 
         btnIncrementar = findViewById(R.id.btnIncrementar)
         btnDecrementar = findViewById(R.id.btnDecrementar)
+        btnAtras = findViewById(R.id.btnAtras)
         tvContador = findViewById(R.id.tvNumero)
 
+        btnAtras.setOnClickListener {
+            val miIntent3 = Intent(this,MainActivity::class.java)
+            startActivity(miIntent3)
+        }
 
         btnIncrementar.setOnClickListener {
             if (contador<10){
@@ -41,4 +48,6 @@ class SegundaActivity : AppCompatActivity() {
             tvContador.text = "$contador"
         }
     }
+
+
 }

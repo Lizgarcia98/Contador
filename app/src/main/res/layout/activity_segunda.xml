@@ -10,7 +10,7 @@
         android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="252dp"
         android:text="0"
         android:textColor="#171212"
         android:textColorHint="#FFFFFF"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="92dp"
         android:backgroundTint="#FFEB3B"
         android:shadowColor="#0B0101"
         android:text="Decrementar"
@@ -39,7 +39,7 @@
         android:id="@+id/btnIncrementar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="60dp"
         android:backgroundTint="#FFEB3B"
         android:text="Incrementar"
@@ -49,5 +49,19 @@
         app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toEndOf="@+id/btnDecrementar"
         app:layout_constraintTop_toBottomOf="@+id/tvNumero" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E41313"
+        android:text="atras"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
