@@ -32,12 +32,12 @@ class SegundaActivity : AppCompatActivity() {
         }
 
         btnIncrementar.setOnClickListener {
-            if (contador<10){
-                contador++
-            }else{
-                btnIncrementar.isEnabled = false
-            }
+
+            contador++
             tvContador.text = "$contador"
+           if(btnIncrementar.isEnabled ) {
+                btnIncrementar.isEnabled = true
+           }
         }
         btnDecrementar.setOnClickListener {
         if (contador>1){
